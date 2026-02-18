@@ -1,0 +1,140 @@
+.header{
+    display: flex;
+    padding: 2vw 1vw 5vh 1vw;
+    justify-content: space-around;
+    
+}
+
+
+.nav__lista__header{
+
+  display: flex;
+  justify-content: space-around;
+ 
+
+
+}
+.nav__item__header{
+    padding: 0 1em;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: var(--azul);
+    white-space:nowrap;
+}
+
+#hamburguer{
+  display: none;
+}
+
+.hidden{
+  display: none;
+}
+
+@media screen and (max-width:1000px){
+
+    .nav{
+        display: none;
+    }
+
+
+    #hamburguer{
+      display: block;
+      padding-left: 2em;
+      background-color: var(--branco);
+      border: none;
+    }
+
+
+    
+    .header__logo{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        position: relative;
+        justify-content: left;
+        padding: 2em 0 0 0;
+
+
+    
+      }
+    .logo__mobile{
+
+      text-align: center;
+      margin:auto;
+    }
+    .header__menu-hamb{
+       background-image: url("../images/menu.svg");
+       background-position: left;
+       background-repeat: no-repeat;
+       
+       
+      }
+    
+      .container{
+        z-index: 10;
+        padding: 2em 0 2em 0;
+        display: flex;
+        
+
+      }
+      #menu{
+ 
+        position: absolute;
+        top: 100%;
+        background-color: var(--branco);
+        width: 100%;
+        height: 100vh;
+        z-index: 10;
+      }
+      .lista-menu{
+        position: absolute;  
+        
+        top: 100%;
+        width: 100%;
+        height: 100vh;
+        
+        background-color: var(--branco);
+    
+      }
+    
+      .lista__item{
+        margin: 2em;
+        white-space:inherit;
+      }
+      .lista__link{
+        text-decoration: none;
+        color: var(--azul);
+        
+        font-size: 24px;
+        
+      }
+      
+      .container__botao{
+        display: none;
+        
+      }
+
+      .container__rotulo{
+        display: block;
+      }
+    
+      .container__imagem{
+       
+        padding: 1em;
+        margin-left: 1em;
+    
+      }
+      .container__botao:checked ~ .lista-menu{
+        display: block;
+      }
+
+      .hidden{
+        display: none;
+        
+      }
+
+}

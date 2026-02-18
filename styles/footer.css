@@ -1,0 +1,145 @@
+.footer__esquerdo{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: left;
+    justify-content: center;
+}
+
+.footer__direito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.footer{
+    margin: 2em 0 2em 0;
+    padding:1em 0 1em 0;
+    display: flex;
+    justify-content: center;
+
+}
+.separador__footer{
+    margin: 0;
+    margin: 0 20vw 0 20vw;
+    justify-content: center;
+   
+}
+
+
+
+
+.footer__nav{
+    margin: 7px 0 7px 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav__lista{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    gap: 1em;
+   
+}
+
+
+
+.nav__link{
+    padding: 0;
+    margin: 0;
+}
+.nav__item{
+    padding: 0;
+}
+
+.footer__crp{
+    padding-top: 1em;
+}
+.footer__nome{
+    
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+    .footer{
+        display: flex;
+        justify-content:center;
+        
+        width: 100%;
+
+        
+    }
+    .separador__footer{
+        padding: 0;
+        margin:0 1.5em 0 1.5em;
+    
+    }
+    .footer__direito{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        
+        
+
+    }
+    .nav__item{
+        margin: 0;
+        padding: 0;
+
+        
+    }
+
+    .footer__crp{
+        font-size: 20px;
+    }
+
+
+
+    .nav__link{
+        white-space: nowrap;
+        font-size: 20px;
+        font-weight: 200;
+        
+    }
+    .footer__nav{
+        
+        padding: 0; 
+        margin: 0;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav__lista{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        padding-bottom: .5em;
+        gap: 0px ;
+    }
+
+    .localizacao__footer{
+        font-size: 20px;
+ 
+        text-align: center;
+        
+    }
+
+    .footer__esquerdo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      
+        
+    }
+ 
+}
