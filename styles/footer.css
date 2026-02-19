@@ -68,25 +68,35 @@
 
     .footer{
         display: flex;
-        justify-content:center;
-        
+        justify-content:space-around;
+        margin: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
         width: 100%;
 
         
     }
     .separador__footer{
         padding: 0;
-        margin:0 1.5em 0 1.5em;
-    
+        margin:0;
+        display: flex;
+        justify-content: center;
     }
     .footer__direito{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         justify-items: center;
-        
-        
+        padding-right: 1.858em;
 
+    }
+     .footer__esquerdo{
+        margin:0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
     .nav__item{
         margin: 0;
@@ -133,13 +143,4 @@
         
     }
 
-    .footer__esquerdo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-      
-        
-    }
- 
 }
